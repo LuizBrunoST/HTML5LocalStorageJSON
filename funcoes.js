@@ -51,7 +51,7 @@ $(function(){
 		$("#tblListar").html("");
 		$("#tblListar").html(
 			"<thead>"+
-			"	<tr>"+
+			"	<tr class='w3-blue'>"+
 			"<th></th>"+
 			"	<th>Código</th>"+
 			"	<th>Nome</th>"+
@@ -66,7 +66,7 @@ $(function(){
 		 for(var i in tbClientes){
 			var cli = JSON.parse(tbClientes[i]);
 		  	$("#tblListar tbody").append("<tr>"+
-									 	 "	<td><img src='edit.png' alt='"+i+"' class='btnEditar'/><img src='delete.png' alt='"+i+"' class='btnExcluir'/></td>" + 
+									 	 "	<td><button class='btnEditar w3-blue w3-button' alt='"+i+"'><i class='fa-solid fa-pen-to-square'></i></button><button class='btnExcluir w3-button w3-red' alt='"+i+"'><i class='fa-solid fa-trash'></i></button></td>" + 
 										 "	<td>"+cli.Codigo+"</td>" + 
 										 "	<td>"+cli.Nome+"</td>" + 
 										 "	<td>"+cli.Telefone+"</td>" + 
